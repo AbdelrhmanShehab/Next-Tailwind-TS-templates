@@ -141,12 +141,14 @@ export default function Home() {
         />
         <h2 className="text-white font-bold text-2xl ">Abdelrhman Hossam</h2>
         <div className="flex justify-center items-start gap-2 w-full px-4">
+          <p className="text-cyan-600 text-7xl leading-none mb-4">&quot;</p>
           <p className="text-white text-center leading-relaxed w-[90%] md:w-[60%]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
             error animi quaerat! Omnis molestiae maiores maxime numquam. Dolor
             odio veniam, unde porro at officiis et consectetur facilis molestias
             distinctio provident?
           </p>
+          <p className="text-cyan-600 text-7xl leading-none mt-2">&quot;</p>
         </div>
       </section>
       {/* footer section */}
