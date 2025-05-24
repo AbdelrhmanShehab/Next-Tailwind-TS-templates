@@ -8,7 +8,7 @@ type Props = {
 export default function ServiceCard({ service }: Props) {
   return (
     <article className=" relative w-full h-[300px] card-shadow rounded-2xl ">
-      <div className="absolute flex flex-col pt-[20px] gap-[14px] h-[300px] w-[90%] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute flex flex-col pt-[20px] gap-4 h-[260px] md:h-[300px] w-[90%] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
         <div className="relative w-[80px] h-[80px] rounded-full bg-[#2f82ab]/10">
           {" "}
           <Image

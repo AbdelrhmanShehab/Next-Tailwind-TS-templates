@@ -40,9 +40,9 @@ export default function Home() {
       {/* main container view */}
       <main className=" relative mx-auto px-[15px] w-[100%] md:w-[94%]">
         {/* our services section */}
-        <div className=" flex flex-col gap-[20px] mt-[80px] mb-[60px] md:flex-row md:gap-0 md:justify-between items-center">
-          <h1 className="text-header">Our Services</h1>
-          <p className="text-color md:w-[60%] w-full">
+        <div className=" flex flex-col gap-[20px] mb-8 md:flex-row md:gap-0 md:justify-between ">
+          <h1 className="text-header ">Our Services</h1>
+          <p className="text-color md:w-[60%] w-full mb-3">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad
@@ -60,7 +60,7 @@ export default function Home() {
                 className="object-cover rounded-xl border-1  border-blue-400"
               />
             </div>
-            <h3 className="font-bold text-lg">Article one</h3>
+            <h3 className="font-bold text-xl">Article one</h3>
           </article>
           {/* article two */}
           <article className="md:w-[calc(33.3333%-12px)]">
@@ -72,7 +72,7 @@ export default function Home() {
                 className="object-cover rounded-xl border-1  border-blue-400"
               />
             </div>
-            <h3 className="font-bold text-lg">Article two</h3>
+            <h3 className="font-bold text-xl">Article two</h3>
           </article>
           {/* article 3 */}
           <article className="md:w-[calc(33.3333%-12px)]">
@@ -84,11 +84,11 @@ export default function Home() {
                 className="object-cover rounded-xl border-1  border-blue-400"
               />
             </div>
-            <h3 className="font-bold text-lg">Article three</h3>
+            <h3 className="font-bold text-xl">Article three</h3>
           </article>
         </section>
         {/* case study section */}
-        <section className="flex flex-col  w-full h-[780px] lg:h-[82vh] mt-[80px] lg:mt-[40px] mb-[60px] bg-[#F4F4F4] rounded-2xl relative lg:flex-row-reverse items-center">
+        <section className="flex flex-col my-8 w-full h-[800px] lg:h-[82vh] bg-[#F4F4F4] rounded-2xl relative lg:flex-row-reverse items-center">
           <div className="relative h-[300px] lg:h-[500px] w-[95%] md:w-[97%] lg:mr-3 mt-[2.5%] md:mt-[1.5%] mx-auto rounded-2xl overflow-hidden">
             <Image
               src="/assets/template-one-imgs/our-services-img.png"
@@ -97,7 +97,7 @@ export default function Home() {
               className="object-cover rounded-2xl mt-[2.5%]  md:mt-[1.5%] lg:mt-[-2%]"
             />
           </div>
-          <div className="flex flex-col gap-[30px] mt-[30px] px-6 lg:w-[800px]">
+          <div className="flex flex-col gap-4 px-6 lg:w-[800px] mt-4">
             <h1 className="text-header ">Case Study</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </section>
         {/* second our services section 2nd*/}
-        <div className=" flex flex-col gap-6 mt-[80px] mb-8">
+        <div className=" flex flex-col gap-6 ">
           <h1 className="text-header ">Our Services</h1>
           <p className="text-color md:w-[80%] w-full">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -129,7 +129,31 @@ export default function Home() {
         {/* 3 services cards with shadows */}
         {/* article 1 */}
         <ServicesSection services={services} />
+        {/* section qoute */}
       </main>
+      <section className="h-[80vh] md:h-[60vh] flex flex-col gap-6 items-center justify-center my-8 w-full bg-[#1E1E1E] relative">
+        <h1 className="text-header text-white">Testimonials</h1>
+        <Image
+          src="/assets/template-one-imgs/person-qoute.png"
+          alt="Home Background"
+          width={100}
+          height={100}
+          className="object-cover rounded-[100%] border-1"
+        />
+        <h2 className="text-white font-bold text-2xl ">Abdelrhman Hossam</h2>
+        <div className="flex justify-center items-start gap-2 w-full px-4">
+          <p className="text-cyan-600 text-7xl leading-none mb-4">"</p>
+          <p className="text-white text-center leading-relaxed w-[90%] md:w-[60%]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
+            error animi quaerat! Omnis molestiae maiores maxime numquam. Dolor
+            odio veniam, unde porro at officiis et consectetur facilis molestias
+            distinctio provident?
+          </p>
+          <p className="text-cyan-600 text-7xl leading-none mt-2">"</p>
+        </div>
+      </section>
+      {/* footer section */}
+      <p className="flex justify-center items-center mb-6">© Website 2025 All Right Reserved.</p>
     </>
   );
 }

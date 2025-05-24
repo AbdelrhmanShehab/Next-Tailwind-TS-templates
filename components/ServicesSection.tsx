@@ -8,7 +8,7 @@ type Props = {
 
 export default function ServicesSection({ services }: Props) {
   return (
-    <section className="flex gap-4 flex-col md:flex-row md:justify-between">
+    <section className="flex gap-8 flex-col md:flex-row md:justify-between mt-6 mb-12">
       {services.map((service) => (
         <ServiceCard key={service.id} service={service} />
       ))}
