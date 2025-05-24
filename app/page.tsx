@@ -38,7 +38,7 @@ export default function Home() {
         </button>
       </div>
       {/* main container view */}
-      <main className=" relative mx-auto px-[15px] w-[100%] md:w-[94%]">
+      <main className=" relative mx-auto px-[15px] w-[100%] md:w-[96%]">
         {/* our services section */}
         <div className=" flex flex-col gap-[20px] mb-8 md:flex-row md:gap-0 md:justify-between ">
           <h1 className="text-header ">Our Services</h1>
@@ -88,8 +88,8 @@ export default function Home() {
           </article>
         </section>
         {/* case study section */}
-        <section className="flex flex-col my-8 w-full h-[800px] lg:h-[82vh] bg-[#F4F4F4] rounded-2xl relative lg:flex-row-reverse items-center">
-          <div className="relative h-[300px] lg:h-[500px] w-[95%] md:w-[97%] lg:mr-3 mt-[2.5%] md:mt-[1.5%] mx-auto rounded-2xl overflow-hidden">
+        <section className="flex flex-col my-8 w-full h-[800px] lg:h-[82vh] bg-[#000b17] rounded-2xl relative lg:flex-row-reverse items-center">
+          <div className="relative h-[40%] lg:h-[500px] w-[95%] md:w-[97%] lg:mr-3 mt-[2.5%] md:mt-[1.5%] mx-auto rounded-2xl overflow-hidden">
             <Image
               src="/assets/template-one-imgs/our-services-img.png"
               alt="Home case study"
@@ -97,9 +97,9 @@ export default function Home() {
               className="object-cover rounded-2xl mt-[2.5%]  md:mt-[1.5%] lg:mt-[-2%]"
             />
           </div>
-          <div className="flex flex-col gap-4 px-6 lg:w-[800px] mt-4">
+          <div className="flex flex-col gap-4 px-6 lg:w-[800px] mt-4 text-white">
             <h1 className="text-header ">Case Study</h1>
-            <p>
+            <p className="text-[1rem] md:text-[1.2rem]">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -109,8 +109,7 @@ export default function Home() {
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
               tation ullamcorper suscipit lobortis nisl ut aliquip ex ea nibh
               euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation
-              ullamcorper suscipit lobortis nisl ut{" "}
+              Ut wisi enim ad minim veniam, quis nostrud
             </p>
             <button className="px-[30px] max-w-[150px] py-[10px] bg-primary rounded-2xl text-white font-bold">
               Read more
@@ -142,18 +141,20 @@ export default function Home() {
         />
         <h2 className="text-white font-bold text-2xl ">Abdelrhman Hossam</h2>
         <div className="flex justify-center items-start gap-2 w-full px-4">
-          <p className="text-cyan-600 text-7xl leading-none mb-4">"</p>
+          <p className="text-cyan-600 text-7xl leading-none mb-4">&quot;</p>
           <p className="text-white text-center leading-relaxed w-[90%] md:w-[60%]">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
             error animi quaerat! Omnis molestiae maiores maxime numquam. Dolor
             odio veniam, unde porro at officiis et consectetur facilis molestias
             distinctio provident?
           </p>
-          <p className="text-cyan-600 text-7xl leading-none mt-2">"</p>
+          <p className="text-cyan-600 text-7xl leading-none mt-2">&quot;</p>
         </div>
       </section>
       {/* footer section */}
-      <p className="flex justify-center items-center mb-6">© Website 2025 All Right Reserved.</p>
+      <p className="flex justify-center items-center mb-6">
+        © Website 2025 All Right Reserved.
+      </p>
     </>
   );
 }
