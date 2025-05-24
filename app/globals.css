@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.bg-primary {
+  background-color: #2f82ab;
+}
+.text-header {
+  color: #1e1e1e;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.text-color {
+  color: #1e1e1e;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.card-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
